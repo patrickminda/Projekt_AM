@@ -9,11 +9,9 @@
 **Struktura Katalogów:**
 
 **>src/**<br>
-<<<<<<< HEAD
-    >components/ reużywalne komponenty xd<br>
-=======
+
+    >components/ reużywalne komponenty <br>
     >components/<br>
->>>>>>> f48b2182968e91d3b930d5a5c0736efabd4321b1
         >Button.js<br>
         >Calendar.js<br>
         >Rating.js<br>
