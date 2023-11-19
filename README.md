@@ -8,49 +8,42 @@
 
 **Struktura Katalogów:**
 
-**>src/**
-
-    >components/
-      >Button.js
-      >Calendar.js
-      >Rating.js
-      >...
+**>src/**<br>
+    >components/<br>
+      >Button.js<br>
+      >Calendar.js<br>
+      >Rating.js<br>
+      >...<br>
       
-    >screens/
-        >HomeScreen.js
-        >SearchScreen.js
-      >ServiceProviderScreen.js
-      >CalendarScreen.js
-      >RatingsAndReviewsScreen.js
-      >RegistrationScreen.js
-      >LoginScreen.js
-      >UserProfileScreen.js
-    >navigation/
-      >AppNavigator.js
-    >services/
-      >AuthService.js
-      >CalendarService.js
-      >RatingService.js
-      >...
-    >assets/
-      >images/
-      >fonts/
-***>App.js***
+    >screens/<br>
+      >HomeScreen.js<br>
+      >SearchScreen.js<br>
+      >ServiceProviderScreen.js<br>
+      >CalendarScreen.js<br>
+      >RatingsAndReviewsScreen.js<br>
+      >RegistrationScreen.js<br>
+      >LoginScreen.js<br>
+      >UserProfileScreen.js<br>
+    >navigation/<br>
+      >AppNavigator.js<br>
+    >services/<br>
+      >AuthService.js<br>
+      >CalendarService.js<br>
+      >RatingService.js<br>
+      >...<br>
+    >assets/<br>
+      >images/<br>
+      >fonts/<br>
+***>App.js***<br>
 
-**Komponenty:**
+***Ekrany***
 
-Button.js: Przycisk do ogólnego użytku w różnych częściach aplikacji.
-Calendar.js: Komponent kalendarza do wyświetlania dostępności i rezerwacji.
-Rating.js: Komponent do wyświetlania i oceniania usługodawcy.
-Inne komponenty według potrzeb.
-Ekrany:
-
-HomeScreen.js: Główny ekran zawierający dostępne kategorie usług.
-SearchScreen.js: Ekran do wyszukiwania usługodawców na podstawie kategorii i lokalizacji.
-ServiceProviderScreen.js: Strona szczegółowa usługodawcy z dostępnymi terminami i możliwością rezerwacji.
-CalendarScreen.js: Kalendarz z widokiem dostępności i umówionych wizyt.
-RatingsAndReviewsScreen.js: Ekran zawierający opinie i oceny dotyczące usługodawców.
-RegistrationScreen.js i LoginScreen.js: Ekrany rejestracji i logowania.
-UserProfileScreen.js: Profil użytkownika z historią rezerwacji, ocenami itp.
-_Nawigacja:_
-AppNavigator.js: Definicja nawigacji stosowanej w aplikacji.
+HomeScreen.js: Główny ekran zawierający dostępne kategorie usług.<br>
+SearchScreen.js: Ekran do wyszukiwania usługodawców na podstawie kategorii i lokalizacji.<br>
+ServiceProviderScreen.js: Strona szczegółowa usługodawcy z dostępnymi terminami i możliwością rezerwacji.<br>
+CalendarScreen.js: Kalendarz z widokiem dostępności i umówionych wizyt.<br>
+RatingsAndReviewsScreen.js: Ekran zawierający opinie i oceny dotyczące usługodawców.<br>
+RegistrationScreen.js i LoginScreen.js: Ekrany rejestracji i logowania.<br>
+UserProfileScreen.js: Profil użytkownika z historią rezerwacji, ocenami itp.<br>
+***Nawigacja***<br>
+AppNavigator.js: Definicja nawigacji stosowanej w aplikacji.<br>
