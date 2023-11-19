@@ -10,9 +10,9 @@
 
 **>src/**<br>
     >components/<br>
-      >Button.js<br>
-      >Calendar.js<br>
-      >Rating.js<br>
+        >Button.js<br>
+        >Calendar.js<br>
+        >Rating.js<br>
       >...<br>
     >screens/<br>
       >HomeScreen.js<br>
