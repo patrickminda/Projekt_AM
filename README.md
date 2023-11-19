@@ -14,7 +14,6 @@
       >Calendar.js<br>
       >Rating.js<br>
       >...<br>
-      
     >screens/<br>
       >HomeScreen.js<br>
       >SearchScreen.js<br>
