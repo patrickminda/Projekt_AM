@@ -9,7 +9,6 @@
 **Struktura Katalogów:**
 
 **>src/**
-
     >components/
       >Button.js
       >Calendar.js
