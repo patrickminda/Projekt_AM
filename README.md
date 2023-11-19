@@ -1,5 +1,7 @@
 # Projekt_AM
 
+#kurła ale mnie to wkuriwa
+
 **Temat projektu:** aplikacja do rezerwacji usług (np. fryzjer, mechanik, hydraulik)<br>
 **Zaimplementowane funkcjonalności:** rejestracja, logowanie, kalendarz<br>
 **Lista ekranów:** ekran główny, wyszukiwanie, strony usługodawców, kalendarz z wizytami, oceny i opinie, rejestracja, logowanie, profil użytkownika<br>
