@@ -13,7 +13,7 @@
         >Button.js<br>
         >Calendar.js<br>
         >Rating.js<br>
-      >...<br>
+        >...<br>
     >screens/<br>
       >HomeScreen.js<br>
       >SearchScreen.js<br>
