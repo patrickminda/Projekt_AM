@@ -9,14 +9,16 @@
 **Struktura Katalogów:**
 
 **>src/**
+
     >components/
       >Button.js
       >Calendar.js
       >Rating.js
       >...
+      
     >screens/
-      >HomeScreen.js
-      >SearchScreen.js
+        >HomeScreen.js
+        >SearchScreen.js
       >ServiceProviderScreen.js
       >CalendarScreen.js
       >RatingsAndReviewsScreen.js
