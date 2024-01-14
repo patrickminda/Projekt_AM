@@ -15,7 +15,6 @@ const RatingsScreen = ({navigation}) => {
     </GradientBackground>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -24,6 +23,5 @@ const styles = StyleSheet.create({
     padding: 16,
   },
 });
-
 
 export default RatingsScreen;
