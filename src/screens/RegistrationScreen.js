@@ -5,12 +5,14 @@ import WhiteInput from '../components/WhiteInput';
 import PinkButton from '../components/PinkButton';
 import {useForm} from 'react-hook-form';
 
+
 import GradientBackground from '../components/GradientBackground';
 import GradientBar from '../components/GradientBar';
 import { useNavigation } from '@react-navigation/native';
 
 
 const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
 
 const RegistrationScreen = ( ) => {
 
@@ -24,11 +26,9 @@ const RegistrationScreen = ( ) => {
 const pwd = watch('password');
 
 
-  const onSignUpPressed = () => {
-    Alert.alert('Witaj', 'Siemanko w naszej apce');
-    navigation.navigate('HomeScreen');
-  
-  }
+   const onSignUpPressed = async ( ) => {
+     navigation.navigate('HomeScreen');
+  };
 
 
   return (
@@ -92,7 +92,7 @@ const pwd = watch('password');
 
          <WhiteButton text="ZAREJESTRUJ SIĘ" onPress={handleSubmit(onSignUpPressed)}/>
 
-      <GradientBar></GradientBar>
+      <GradientBar/>
 
       </View>
       <PinkButton text="Zaloguj się" text1="Posiadasz konta?" onPress={() => navigation.navigate('LoginScreen')}/>

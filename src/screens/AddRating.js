@@ -2,16 +2,17 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 import GradientBackground from '../components/GradientBackground';
-import WhiteButton from '../components/WhiteButton';
 
-const SearchScreen = ({navigation}) => {
+const AddRating = ({navigation}) => {
   
 
   return (
     <GradientBackground>
-      <View style={styles.container}>
-        <WhiteButton text={"Zlota raczka"} onPress={() => navigation.navigate('ProvNav')}/>
-      </View>
+    <View style={styles.container}>
+      <Text style={styles.title}>Ocena</Text>
+
+      
+    </View>
     </GradientBackground>
   );
 };
@@ -23,7 +24,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 16,
   },
-  
 });
 
-export default SearchScreen;
+export default AddRating;

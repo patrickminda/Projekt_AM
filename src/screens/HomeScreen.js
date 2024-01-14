@@ -1,14 +1,29 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-const HomeScreen = ( ) => {
+import GradientBackground from '../components/GradientBackground';
+
+const HomeScreen = ({navigation}) => {
+  
+
   return (
-   <View>
-    <Text>
-        HomeScreen
-    </Text>
-   </View>
+    <GradientBackground>
+    <View style={styles.container}>
+      <Text style={styles.title}>Twój Ekran</Text>
+
+      
+    </View>
+    </GradientBackground>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 16,
+  },
+});
 
 export default HomeScreen;

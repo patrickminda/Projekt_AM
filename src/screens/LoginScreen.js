@@ -15,27 +15,25 @@ import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = ( ) => {
 
+
+
   const navigation = useNavigation();
 
   const {control,
          handleSubmit,
+         watch,
         formState: {errors},
       } = useForm();
 
-
+const pwd = watch('username');  
     
   const onSignInPressed = () => {
    
-    navigation.navigate('HomeScreen');
+    navigation.navigate('TabNav');
   }
   
   const onForgotPasswordPressed = () => {
     console.warn('Strona w budowie :)');
-  }
-
-  const onSignUpPressed = () => {
-   
-    navigation.navigate('RegistrationScreen');
   }
 
   return (
@@ -60,7 +58,11 @@ const LoginScreen = ( ) => {
         placeholder="Hasło"
         control={control}
         secureTextEntry
-        rules={{required: 'Pole hasło jest puste'}}
+        rules={{
+          required: 'Pole hasło jest puste',
+          validate: value => 
+          value === pwd || 'Hasła są niezgodne',
+        }}
         />
         
   
@@ -75,7 +77,7 @@ const LoginScreen = ( ) => {
       </TouchableOpacity>
       </View>
 
-      <PinkButton text="Dołacz do nas" text1="Nie posiadasz konta?" onPress={onSignUpPressed}/>
+      <PinkButton text="Dołacz do nas" text1="Nie posiadasz konta?" onPress={() => navigation.navigate('RegistrationScreen')}/>
 
       </View>
     </GradientBackground>
