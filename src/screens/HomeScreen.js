@@ -11,7 +11,7 @@ const HomeScreen = ({navigation}) => {
     <View style={styles.container}>
       <Text style={styles.title}>Twój Ekran</Text>
 
-      
+    
     </View>
     </GradientBackground>
   );

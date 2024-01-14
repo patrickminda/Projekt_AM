@@ -14,6 +14,7 @@ const GradientBar = () => {
          >
         </LinearGradient>
     </View>
+    
     );
 };
     

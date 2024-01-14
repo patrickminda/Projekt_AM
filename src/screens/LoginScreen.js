@@ -12,7 +12,6 @@ import GradientBar from '../components/GradientBar';
 
 import { useNavigation } from '@react-navigation/native';
 
-
 const LoginScreen = ( ) => {
 
 

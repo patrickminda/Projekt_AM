@@ -13,6 +13,7 @@ const GradientBar = () => {
             end={{ x: 1, y: 0 }}
          >
         </LinearGradient>
+        
     </View>
     );
 };

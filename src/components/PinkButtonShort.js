@@ -5,6 +5,7 @@ const WhiteButton = ({onPress, text}) => {
    
     return (
         
+        
       <TouchableOpacity onPress={onPress} style={styles.button}>
             <Text style = {styles.buttonText}>{text}</Text>
       </TouchableOpacity>

@@ -9,6 +9,7 @@ const WhiteButton = ({onPress, text}) => {
             <Text style = {styles.buttonText}>{text}</Text>
       </TouchableOpacity>
 
+
         
     );
 };

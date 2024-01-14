@@ -74,7 +74,7 @@ export default function TabNav() {
                 }}
             />
 
-        </Tab.Navigator>
+        </Tab.Navigator>    
      
     );
   }

@@ -9,7 +9,6 @@ import TabNav from './TabNav';
 import ProvNav from './ProvNav';
 import RatioStackNav from './RatioStackNav';
 
-
 const Stack = createNativeStackNavigator();
 
 const AppNavigation = ( ) => {

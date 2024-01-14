@@ -9,7 +9,7 @@ const AddRating = ({navigation}) => {
   return (
     <GradientBackground>
     <View style={styles.container}>
-      <Text style={styles.title}>Ocena</Text>
+      <Text style={styles.title}>Ocena dsdscxc</Text>
 
       
     </View>

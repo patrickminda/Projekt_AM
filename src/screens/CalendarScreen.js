@@ -12,7 +12,6 @@ const CalendarScreen = ({navigation}) => {
     <GradientBackground>
       <View style={styles.container}>
 
-
       
 
           <Text style={styles.text}> Zakończone wizyty</Text>

@@ -10,6 +10,8 @@ const PinkButton = ({onPress, text, text1}) => {
           <Text style = {styles.textPassword}>{text1}</Text>
           </View>
       
+
+      
            
       <TouchableOpacity onPress={onPress} style={styles.button}>
             <Text style = {styles.buttonText}>{text}</Text>

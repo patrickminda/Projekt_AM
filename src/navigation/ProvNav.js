@@ -7,6 +7,7 @@ const ProvNav = ( ) => {
 
   return (
 
+    
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="ServiceProviderScreen" component={ServiceProviderScreen} />
     </Stack.Navigator>

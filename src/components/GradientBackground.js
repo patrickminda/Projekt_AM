@@ -16,6 +16,7 @@ const GradientBackground = ({children}) => {
           
           >
             
+            
             <SafeAreaView style={styles.container}>{children}</SafeAreaView>
 
         </LinearGradient>

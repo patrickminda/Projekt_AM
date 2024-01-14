@@ -34,6 +34,7 @@ const WhiteInput = ({control, name, rules = {}, placeholder, secureTextEntry}) =
                         </Text>
                     )}
                     </>
+                    
                 )}
             
             />

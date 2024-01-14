@@ -20,6 +20,7 @@ const UserPrfileScreen = ({navigation}) => {
       </View>
 
 
+
     </GradientBackground>
   );
 };

@@ -7,6 +7,7 @@ const RatioStackNav = ( ) => {
 
   return (
 
+    
     <Stack.Navigator >
       <Stack.Screen name="Opinie" component={RatingsScreen} />
     </Stack.Navigator>

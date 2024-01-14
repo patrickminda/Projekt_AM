@@ -6,6 +6,7 @@ const Stack = createNativeStackNavigator();
 const RatioNav = ( ) => {
 
   return (
+    
 
     <Stack.Navigator>
       <Stack.Screen name="Dodaj opinie" component={AddRating} />
