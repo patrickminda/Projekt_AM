@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 import GradientBackground from '../components/GradientBackground';
-import GradientBar from '../components/GradientBar';
+import GradientBarShort from '../components/GradientBarShort';
 import PinkButtonShort from '../components/PinkButtonShort'
 
 const UserProfileScreen = ({navigation}) => {
@@ -30,10 +30,18 @@ const UserProfileScreen = ({navigation}) => {
                 </View>
               </View>
             </View>
+            
           <View style={[styles.Data, styles.frameLayout]}>
+          
             <View style={[styles.PersonalData, styles.TextStyle1]}>
+              
+
               <Text style={[styles.PersonalDataText]}>Dane osobowe</Text>
+
               <View style={styles.NameAndCityBox}>
+                
+          
+
                 <View style={[styles.NameBox]}>
                   <Text style={[styles.ExampleName]}>Jacek Nowak</Text>
                   <Text style={[styles.NameText, styles.NameAndCityText]}>Imie i Nazwisko</Text>
