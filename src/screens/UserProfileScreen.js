@@ -69,6 +69,13 @@ const styles = StyleSheet.create({
     height: 50,
     position: "absolute",
   },
+  UpperBarText: {
+    top: 5,
+    left: 34,
+    fontSize: 30,
+    fontWeight: "500",
+    position: "absolute",
+  },
   container: {
     flex: 1,
     marginTop: 20,
@@ -77,13 +84,6 @@ const styles = StyleSheet.create({
   MainContainer: {
     flex: 1,
     height: '100%',
-  },
-  UpperBarText: {
-    top: 10,
-    left: 34,
-    fontSize: 20,
-    fontWeight: "500",
-    position: "absolute",
   },
   UpperDiv: {
     top: 99,
