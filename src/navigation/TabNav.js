@@ -35,7 +35,7 @@ export default function TabNav() {
                 component={HomeScreen}  
                 options={{
                     tabBarLabel: 'Ekran głowny',
-                    tabBarIcon: ({ color, size }) => (
+                    tabBarIcon: ({ color}) => (
                         <MaterialCommunityIcons name="home" color={color} size={30} style={{ marginBottom: -5 }}/>
                     ),
                 }}
