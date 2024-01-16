@@ -1,5 +1,7 @@
 import { Text, StyleSheet, View,  Pressable } from "react-native";
 import React, { useMemo } from 'react';
+import PinkButtonSmall from '../components/PinkButtonSmall';
+
 const getStyleValue = (key, value) => {
     if (value === undefined) return;
     return { [key]: value === "unset" ? undefined : value };
@@ -13,6 +15,7 @@ const getStyleValue = (key, value) => {
     adresTop,
     adresWidth,
     onOcePress,
+    navigation,
   }) => {
     const wizyta2Style = useMemo(() => {
       return {
@@ -20,17 +23,21 @@ const getStyleValue = (key, value) => {
         ...getStyleValue("width", adresWidth),
       };
     }, [adresTop, adresWidth]);
-  
+
     return (
       <View style={[styles.DoneVisitsDiv, wizyta2Style]}>
         <View style={styles.RightBox}>
-          <Text style={[styles.DateTextStyle, styles.HourTextDiv]}>{dateOrTime}</Text>
+          <Text style={[styles.DateTextStyle, styles.HourTextDiv]}>
+            {dateOrTime}
+          </Text>
           <Text style={[styles.HourTextStyle, styles.HourTextDiv]}>
             {timeOrDate}
           </Text>
         </View>
         <View style={[styles.AddressDiv, styles.LeftBox]}>
-          <Text style={[styles.AddressTextStyle, styles.DoneVisitTextStyle]}>{address}</Text>
+          <Text style={[styles.AddressTextStyle, styles.DoneVisitTextStyle]}>
+            {address}
+          </Text>
         </View>
         <View style={[styles.VisitTypeDiv, styles.LeftBox]}>
           <Text style={[styles.VisitTypeTextSyle, styles.DoneVisitTextStyle]}>
@@ -42,8 +49,12 @@ const getStyleValue = (key, value) => {
             {serviceTitle}
           </Text>
         </View>
-        <Pressable style={[styles.RateDiv, styles.HourTextDiv]} onPress={onOcePress}>
-          <Text style={styles.RateTextStyle}>Oceń</Text>
+        <Pressable style={[styles.RateDiv]}>
+          <PinkButtonSmall
+            text="Oceń"
+            onPress={() => navigation.navigate("RatioNav")}
+          />
+          {navigation}
         </Pressable>
       </View>
     );
@@ -150,7 +161,6 @@ const getStyleValue = (key, value) => {
     RateDiv: {
       top: 25,
       left: 256,
-      backgroundColor: "pink",
       width: 65,
       height: 30,
       justifyContent: "center",
