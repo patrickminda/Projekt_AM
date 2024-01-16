@@ -33,6 +33,7 @@ const ServiceProviderScreen = ({ navigation }) => {
           </View>
 
           <TouchableOpacity
+          
             onPress={() => navigation.navigate('RatingsScreen')}
             style={{ ...styles.service, backgroundColor: '#A77884' }}>
             <Text style={styles.serviceText}>Opinie</Text>

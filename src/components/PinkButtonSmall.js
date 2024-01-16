@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, StyleSheet, TouchableOpacity } from "react-native";
 
-const WhiteButton = ({onPress, text}) => {
+const PinkButtonSmall = ({onPress, text}) => {
    
     return (
         
@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderColor: "#000",
-        marginTop: 15,
+        top: 25,
+        left: 256,
     },
     buttonText: {
         color: "#fff",
@@ -37,4 +38,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default  WhiteButton;
+export default  PinkButtonSmall;

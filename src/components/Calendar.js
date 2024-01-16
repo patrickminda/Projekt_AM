@@ -129,9 +129,8 @@ const Calendar = () => {
 
 const styles = StyleSheet.create({
   MainDiv: {
-    top: '10%',
-    left: '17%',
-    position: "absolute",
+    justifyContent: 'flex-start',
+    height: 290,
   },
   text: {
     fontSize: 25,

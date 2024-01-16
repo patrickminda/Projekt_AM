@@ -1,87 +1,116 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ScrollView} from 'react-native';
 
 import GradientBackground from '../components/GradientBackground';
-import GradientBarShort from '../components/GradientBarShort';
-import PinkButtonSmall from '../components/PinkButtonSmall';
 import DoneVisits from "../components/DoneVisits";
-import FutureVisitsContainer from "../components/FutureVisitsContainer";
 import Calendar from "../components/Calendar";
+import SoonVisits from "../components/SoonVisits";
+import GradientBarShort from '../components/GradientBarShort';
+
+
 const CalendarScreen = ({navigation}) => {
   
 
   return (
     <GradientBackground>
+
+  <View style={styles.container}>
       <View style={styles.UpperBar}>
-        <Text style={[styles.UpperBarText, styles.textTypo]}>Wizyty</Text>
+        <Text style={[styles.UpperBarText, styles.textTypo]}>Kalendarz</Text>
       </View>
-        <View style={styles.kalendarz}>
-          <View style={[styles.DoneVisitsDiv, styles.kreskaLayout]}>
-            <DoneVisits
-              dateOrTime="12 Grudnia"
-              timeOrDate="16:50"
-              address="Wesoła 112, Kielce"
-              serviceName="Combo włosy + broda"
-              serviceTitle="Burbon Barber"
-              adresTop={131}
-              adresWidth={321}
+          
+        <Calendar />
+
+
+
+       
+        
+
+
+        { <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false}>
+
+        <Text style={styles.DoneVisitsLabelTextStyle}>Przyszłe wizyty</Text>
+        <GradientBarShort/> 
+
+<SoonVisits
+            eventDate="17 Styczeń"
+            timeLabel="17:30"
+            serviceType="Farbowanie włosów"
+            addressLabel="Krakowska 12, Kielce"
+            serviceName="Pani Scyzor"
+        />
+
+<SoonVisits
+        eventDate="13 Luty"
+        timeLabel="7:45"
+        serviceType="Prostowanie felg"
+        addressLabel="Jana Pawła 11/11, Kielce"
+        serviceName="Złota rączka"
+    
+      />
+
+        <Text style={styles.DoneVisitsLabelTextStyle}>Zakończone wizyty</Text>
+        <GradientBarShort/> 
+             <DoneVisits
+              eventDate="12 Grudnia"
+              timeLabel="16:50"
+              addressLabel="Wesoła 112, Kielce"
+              serviceType="Combo włosy + broda"
+              serviceName="Burbon Barber"
+              navigation={navigation}
               onOcePress={() => {}}
             />
+
             <DoneVisits
-              dateOrTime="13 Grudnia"
-              timeOrDate="7:45"
-              address="Mirów Nowy 13"
-              serviceName="Hybryda"
-              serviceTitle="Nail Shine"
-              adresTop={39}
-              adresWidth={329}
+              eventDate="13 Grudnia"
+              timeLabel="7:45"
+              addressLabel="Mirów Nowy 13"
+              serviceType="Hybryda"
+              serviceName="Nail Shine"
+              navigation={navigation}
               onOcePress={() => {}}
-            />
-          <Text style={styles.DoneVisitsLabelTextStyle}>Zakończone wizyty</Text>
-        </View>
+            /> 
+     
+       
+        </ScrollView> }
+
+      
       </View>
-      <FutureVisitsContainer />
-      <Calendar />
     </GradientBackground>
   );
 };
 
 const styles = StyleSheet.create({
-  // text: {
-  //   color: "#fff",
-  //   width: '100%',
-  //   textAlign: 'left',
-  //   fontFamily: 'Roboto',
-  //   fontSize: 18,  
-  //   fontWeight: "bold",
-  // },
+   container: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    marginTop: 35,
+  },
+
   DoneVisitsLabelTextStyle: {
     fontSize: 20,
     color: "white",
-    textAlign: "center",
+    textAlign: "left",
     fontWeight: "500",
-    left: 2,
-    top: 0,
-    position: "absolute",
-  },
-  DoneVisitsDiv: {
-    top: 609,
-    height: 206,
   },
   UpperBar: {
-    backgroundColor: "white",
-    top: 33,
+    backgroundColor: "white", 
     width: "110%",
     height: 50,
-    position: "absolute",
   },
   UpperBarText: {
-    top: 5,
-    left: 34,
+    marginLeft: 30,
+    justifyContent: 'center',
     fontSize: 30,
     fontWeight: "500",
-    position: "absolute",
+    
   },
+  scrollContainer: { flex: 1,
+    width: '100%',
+    flex: 1,
+   
+  }
 });
 
 export default CalendarScreen;
