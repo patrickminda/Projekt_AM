@@ -10,7 +10,7 @@ const SearchScreen = ({navigation}) => {
   return (
     <GradientBackground>
       <View style={styles.container}>
-        <WhiteButton text={"Zlota raczka"} onPress={() => navigation.navigate('ProvNav')}/>
+        <WhiteButton text={"Zlota raczka"} onPress={() => navigation.navigate('ServiceProviderScreen')}/>
       </View>
     </GradientBackground>
   );

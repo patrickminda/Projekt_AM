@@ -38,7 +38,7 @@ const AddPhoto = ({ navigation, route }) => {
           to: photoUri,
         });
         console.log('Photo saved to:', photoUri);
-        navigation.navigate("AddRating", { image: photoUri });
+        navigation.navigate("AddRating", { photoUri });
       } catch (error) {
         console.error('Error saving photo:', error);
       }
