@@ -16,7 +16,7 @@ const DoneVisits = ({
     <View style={styles.container}>
         <View style={styles.content}>
      
-  	  <View style={styles.providerBox}>
+  	    <View style={styles.providerBox}>
            <Text style={styles.textServiceName}> {serviceName} </Text>
            
            <Text style={styles.textType}>{addressLabel}</Text>

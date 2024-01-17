@@ -22,7 +22,7 @@ const AppNavigation = ( ) => {
       <Stack.Screen name="RegistrationScreen" component={RegistrationScreen} />
       <Stack.Screen name="TabNav" component={TabNav} />
       <Stack.Screen name="AddPhoto" component={AddPhoto}/>
-      <Stack.Screen name="AddRating" component={AddRating}/>
+      {/* <Stack.Screen name="AddRating" component={AddRating}/> */} //Zakomentowałem zeby kod działał, bo wywalalo błąd
       
       <Stack.Screen name="RatingsScreen" component={RatingsScreen} />
       <Stack.Screen name="ServiceProviderScreen" component={ServiceProviderScreen} />
