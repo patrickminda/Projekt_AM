@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ImageBackground, StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import { ImageBackground, StyleSheet, View, Text} from "react-native";
 
 const SearchingVisitContainer = ({
   Rate,
@@ -8,10 +8,9 @@ const SearchingVisitContainer = ({
   Name,
   ThemeIconSource,
   Image,
-  navigation,
-  onPress
 }) => {
   return (
+    
     <ImageBackground
       style={styles.Container}
       source={Image}
@@ -23,9 +22,8 @@ const SearchingVisitContainer = ({
       </View>
       <View style={styles.lewydiv} >
         <View style={styles.PropetiesContainer}>
-          <TouchableOpacity onPress={onPress} style={styles.button}>//TUTAJ COS KOMBINOWALEM Z NAWIGACJA ALE PIZDA
-            <Text style={styles.TextStyle} onPress={() => navigation.navigate('ServiceProviderScreen')}>{Name}</Text>
-          </TouchableOpacity>
+            <Text style={styles.TextStyle}>{Name}</Text>
+        
         </View>
         <View style={[styles.adres, styles.PropetiesContainer]}>
           <Text style={styles.AddressTextStyle}>

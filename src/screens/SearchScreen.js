@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet, Pressable, Image, TouchableOpacity } from 'react-native';
 
 import GradientBackground from '../components/GradientBackground';
-import WhiteButton from '../components/WhiteButton';
 import SearchingVisitContainer from "../components/SearchingVisitContainer";
 import UpperLabel from "../components/UpperLabel";
 import GradientBarShort from '../components/GradientBarShort';
@@ -12,6 +11,7 @@ const SearchScreen = ({navigation}) => {
   return (
     <GradientBackground>
       <View style={styles.container}>
+        <UpperLabel title='Szukaj'/>
           <View style={styles.SearchFilters}>
           <Image
                 style={styles.LoopImage}
@@ -35,6 +35,8 @@ const SearchScreen = ({navigation}) => {
                 <Text style={styles.Sort}>Sortuj</Text>
           </View>
           <GradientBarShort/>
+
+          <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('ServiceProviderScreen')}>
         <SearchingVisitContainer 
           Image={require('../../assets/zlota_raczka.png')}
           Rate="5,0"
@@ -42,6 +44,8 @@ const SearchScreen = ({navigation}) => {
           Address="Jana Pawła 11/11, Kielce"
           Name="Złota rączka"
           />
+          </TouchableOpacity>
+
           <GradientBarShort/>
           <SearchingVisitContainer
           Image={require('../../assets/pani_scyzor.png')}
@@ -52,7 +56,7 @@ const SearchScreen = ({navigation}) => {
           />
           <GradientBarShort/>
         </View>
-        {/* <WhiteButton text={"Zlota raczka"} onPress={() => navigation.navigate('ServiceProviderScreen')}/> */}
+       
     </GradientBackground>
   );
 };
@@ -63,7 +67,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    marginTop: 35,
   },
 
    SearchFilters: {
@@ -141,6 +144,9 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     color: "white",
    },
+   btn: {
+    width: '100%'
+   }
 });
 
 export default SearchScreen;

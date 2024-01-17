@@ -5,23 +5,18 @@ const PinkButton = ({onPress, text, text1}) => {
    
     return (
         
-        <View style={styles.bottom}> 
-          <View style={{height: 24, alignItems:"center", justifyContent: 'center',}}> 
-          <Text style = {styles.textPassword}>{text1}</Text>
-          </View>
-      
+    <View style={styles.bottom}> 
 
-      
-           
-      <TouchableOpacity onPress={onPress} style={styles.button}>
-            <Text style = {styles.buttonText}>{text}</Text>
-      </TouchableOpacity>
-
+            <View style={{height: 24, alignItems:"center", justifyContent: 'center',}}> 
+                    <Text style = {styles.textPassword}>{text1}</Text>
+            </View>
+            
+            <TouchableOpacity onPress={onPress} style={styles.button}>
+                    <Text style = {styles.buttonText}>{text}</Text>
+            </TouchableOpacity>
 
       </View>
-     
-
-        
+         
     );
 };
 

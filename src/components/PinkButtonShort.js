@@ -4,13 +4,11 @@ import { Text, StyleSheet, TouchableOpacity } from "react-native";
 const WhiteButton = ({onPress, text}) => {
    
     return (
-        
-        
+
       <TouchableOpacity onPress={onPress} style={styles.button}>
             <Text style = {styles.buttonText}>{text}</Text>
       </TouchableOpacity>
 
-        
     );
 };
 
@@ -24,8 +22,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        borderColor: "#000",
-        marginTop: 15,
+        borderColor: "#000",  
     },
     buttonText: {
         color: "#fff",

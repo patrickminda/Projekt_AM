@@ -1,20 +1,14 @@
 import React from 'react';
-import { View, Text,  StyleSheet, TouchableOpacity, Alert } from 'react-native';
+import {useForm } from 'react-hook-form';
+import { View, Text,  StyleSheet, TouchableOpacity } from 'react-native';
 import WhiteButton from '../components/WhiteButton';
 import WhiteInput from '../components/WhiteInput';
 import PinkButton from '../components/PinkButton';
-import {useForm,  } from 'react-hook-form';
-
-
-
 import GradientBackground from '../components/GradientBackground';
 import GradientBar from '../components/GradientBar';
-
 import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = ( ) => {
-
-
 
   const navigation = useNavigation();
 

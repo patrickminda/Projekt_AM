@@ -1,10 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
+import  {GradientBackground} from '../components';
 
-import GradientBackground from '../components/GradientBackground';
-import GradientBar from '../components/GradientBar';
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = () => {
   return (
     <GradientBackground>
       <View style={styles.lowerdiv}>
